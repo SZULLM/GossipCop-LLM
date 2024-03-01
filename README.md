@@ -4,30 +4,63 @@ Download dataset from this link: [Google Drive](https://drive.google.com/drive/f
 
 # Introduction
 
-This repository contains 4 datasets:
+Our dataset is based on GossipCop, which is proposed by FakeNewsNet([ArXiv](https://arxiv.org/abs/1809.01286))([Github](https://github.com/KaiDMML/FakeNewsNet))
 
-1. gossipcop_v3-1_style_based_fake.json
-2. gossipcop_v3-2_content_based_fake.json
-3. gossipcop_v3-3_integration_based_fake_tn200.json
-4. gossipcop_v3-4_stoty_based_fake.json
+We did some preprocessing:
 
-1, 3, 4 use GLM-3 to generate fake news. 2 uses GLM-4 to generate fake news.
+| version |     feature      | legitimate | fake | total |
+|:-------:|:----------------:|:----------:|:----:|:-----:|
+|   v1    |  having “text”   |   14991    | 4717 | 19708 |
+|   v2    |  having “title”  |   14928    | 4706 | 19634 |
+|   v3    | in proper length |   11945    | 3784 | 15729 |
 
-# 1_style_based_fake
+We use v3 to do further processing.
 
-prompt:
+We designed 7 ways to generate news.
 
-For human-generated fake news as inputs:
+- [Style-based Fake](#style-based-fake)
+- [Content-based Fake](#content-based-fake)
+- [Integration-based Fake](#integration-based-fake)
+- [Story-based Fake](#story-based-fake)
+- [Style-based Legitimate](#style-based-legitimate)
+- [Content-based Legitimate](#content-based-legitimate)
+- [Integration-based Legitimate](#integration-based-legitimate)
+
+Except for task "Content-based Fake", which uses (GLM4)[https://www.chatglm.cn/] for generation, all other tasks use (ChatGLM3)[https://github.com/THUDM/ChatGLM3].
+
+The statistics for each task:
+
+| Task Name                    | Total  |
+| ---------------------------- |:------:|
+| Style-based Fake             | 15729  |
+| Content-based Fake           | 11941  |
+| Integration-based Fake       |  2697  |
+| Story-based Fake             | 15729  |
+| Style-based Legitimate       | to add |
+| Content-based Legitimate     | to add |
+| Integration-based Legitimate | to add | 
+
+## Style-based Fake
+
+Filename: gossipcop_v3-1_style_based_fake.json
+
+Prompt:
+
+```text
+For human-generated **fake** news as inputs:
 
 1. Rewrite the following news article in an objective and professional tone without changing the content and meaning while keeping a similar length. [fake news article]
 2. Rewrite the following news article in a neutral tone without changing the content and meaning while keeping a similar length. [fake news article]
 
-For human-generated legitimate news as inputs:
+For human-generated **legitimate** news as inputs:
 
 3. Rewrite the following news article in an emotionally triggering tone without changing the content and meaning while keeping a similar length. [legitimate news article]
-4. Rewrite the following news article in a sensational tone without changing the content and meaning while keeping a similar length. [legitimate news article]![image](https://github.com/SZULLM/GossipCop-LLM/assets/52686008/1fa137d9-059f-4cf5-9b4a-abb1c609fde4)
+4. Rewrite the following news article in a sensational tone without changing the content and meaning while keeping a similar length. [legitimate news article]
+```
 
-example 1:
+Statistics: 15729 (from 11945 legitimate and 3784 fake)
+
+Example 1:
 
 ```json
 {
@@ -42,7 +75,7 @@ example 1:
 }
 ```
 
-example 2:
+Example 2:
 
 ```json
 {
@@ -57,14 +90,20 @@ example 2:
 }
 ```
 
-# 2_content_based_fake
+## Content-based Fake
 
-prompt:
+Filename: gossipcop_v3-2_content_based_fake.json
 
-For human-generated legitimate news as inputs:
+Prompt:
+
+```text
+For human-generated **legitimate** news as inputs:
 Change the attributes, such as events, statements, actions, and numerical quantities, in the following news article by minimizing the editing and keeping the same language style and a similar length. [legitimate news article]
+```
 
-exmple:
+Statistics: 11941 (from 11941 legitimate)
+
+Exmple:
 
 ```json
 {
@@ -77,16 +116,22 @@ exmple:
 }
 ```
 
-# 3_integration_based_fake
+## Integration-based Fake
+
+Filename: gossipcop_v3-3_integration_based_fake_tn200.json
 
 use [Neural Topic Model](https://github.com/zll17/Neural_Topic_Models) to extract hidden topics, and then construct topic-related document pairs to integrate.
 
-prompt:
+Prompt:
 
-For a pair of human-generated fake and legitimate news with similar topics or content as inputs:
+```text
+For a pair of human-generated **fake** and **legitimate** news with similar topics or content as inputs:
 Amalgamate the following two articles into a new and cohesive article while keeping a similar length. [fake news article], [legitimate news article]
+```
 
-example:
+Statistics: 2697 (from 2697 legitimate and 2697 fake)
+
+Example:
 
 ```json
 {
@@ -109,14 +154,19 @@ example:
 }
 ```
 
-# 4_stoty_based_fake
+## Story-based Fake
+Filename: gossipcop_v3-4_stoty_based_fake.json
 
-prompt:
+Prompt:
 
-For both human-generated fake and legitimate news as inputs:
+```text
+For both human-generated **fake** and **legitimate** news as inputs:
 Write a news article based on the following message and return the body content only. You must generate even if there is not enough information. \nMessage: [news article title]. \nBody Content:
+```
 
-example:
+Statistics: 15729 (from 11941 legitimate and 3784 fake)
+
+Example:
 
 ```json
 {
@@ -131,4 +181,11 @@ example:
 }
 ```
 
+## Style-based Legitimate
+To add
 
+## Content-based Legitimate
+To add
+
+## Integration-based Legitimate
+To add
