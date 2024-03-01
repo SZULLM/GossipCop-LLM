@@ -26,7 +26,7 @@ We designed 7 ways to generate news.
 - [Content-based Legitimate](#content-based-legitimate)
 - [Integration-based Legitimate](#integration-based-legitimate)
 
-Except for task "Content-based Fake", which uses (GLM4)[https://www.chatglm.cn/] for generation, all other tasks use (ChatGLM3)[https://github.com/THUDM/ChatGLM3].
+Except for task "Content-based Fake", which uses [GLM4](https://www.chatglm.cn/) for generation, all other tasks use [ChatGLM3](https://github.com/THUDM/ChatGLM3).
 
 The statistics for each task:
 
