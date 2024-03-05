@@ -46,14 +46,16 @@ Filename: gossipcop_v3-1_style_based_fake.json
 
 Prompt:
 
-```text
 For human-generated **fake** news as inputs:
 
+```text
 1. Rewrite the following news article in an objective and professional tone without changing the content and meaning while keeping a similar length. [fake news article]
 2. Rewrite the following news article in a neutral tone without changing the content and meaning while keeping a similar length. [fake news article]
+```
 
 For human-generated **legitimate** news as inputs:
 
+```text
 3. Rewrite the following news article in an emotionally triggering tone without changing the content and meaning while keeping a similar length. [legitimate news article]
 4. Rewrite the following news article in a sensational tone without changing the content and meaning while keeping a similar length. [legitimate news article]
 ```
@@ -96,8 +98,9 @@ Filename: gossipcop_v3-2_content_based_fake.json
 
 Prompt:
 
-```text
 For human-generated **legitimate** news as inputs:
+
+```text
 Change the attributes, such as events, statements, actions, and numerical quantities, in the following news article by minimizing the editing and keeping the same language style and a similar length. [legitimate news article]
 ```
 
@@ -124,8 +127,9 @@ use [Neural Topic Model](https://github.com/zll17/Neural_Topic_Models) to extrac
 
 Prompt:
 
-```text
 For a pair of human-generated **fake** and **legitimate** news with similar topics or content as inputs:
+
+```text
 Amalgamate the following two articles into a new and cohesive article while keeping a similar length. [fake news article], [legitimate news article]
 ```
 
@@ -159,8 +163,9 @@ Filename: gossipcop_v3-4_stoty_based_fake.json
 
 Prompt:
 
-```text
 For both human-generated **fake** and **legitimate** news as inputs:
+
+```text
 Write a news article based on the following message and return the body content only. You must generate even if there is not enough information. \nMessage: [news article title]. \nBody Content:
 ```
 
@@ -182,10 +187,22 @@ Example:
 ```
 
 ## Style-based Legitimate
+
+Prompt:
+
+For human-generated **legitimate** news as inputs:
+
+```text
+Rewrite the following news article by explaining on the complex concepts and terminology to make it easier to read and follow. Do not change anything if the information is not sufficient. Do not change the original meaning. Do not change the writing style and tone. [legitimate news article]
+```
+
 To add
 
 ## Content-based Legitimate
-To add
+
+Prompt:
+
+
 
 ## Integration-based Legitimate
 To add
