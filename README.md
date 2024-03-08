@@ -159,7 +159,7 @@ Example:
 ```
 
 ## Story-based Fake
-Filename: gossipcop_v3-4_stoty_based_fake.json
+Filename: gossipcop_v3-4_story_based_fake.json
 
 Prompt:
 
