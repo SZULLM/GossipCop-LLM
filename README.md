@@ -1,4 +1,4 @@
-![image](https://github.com/SZULLM/GossipCop-LLM/assets/52686008/58ee3882-eaa1-4a32-b8a5-e817396def44)# GossipCop-LLM
+# GossipCop-LLM
 
 Download dataset from this link: [Google Drive](https://drive.google.com/drive/folders/1QfKCGYVZHwNQrsk3PihzZs_6bTacQ93M?usp=sharing)
 
