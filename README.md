@@ -180,7 +180,7 @@ Prompt:
 For human-generated **legitimate** news as inputs:
 
 ```text
-Rewrite the following news article by explaining on the complex concepts and terminology to make it easier to read and follow. Do not change anything if the information is not sufficient. Do not change the original meaning. Do not change the writing style and tone. [legitimate news article]
+Polish the following news article to make it more objective and professional. Do not change the original meaning. Do not add extra information or delete certain information. [legitimate news artical]
 ```
 
 Statistics: 11945 (from 11945 legitimate)
