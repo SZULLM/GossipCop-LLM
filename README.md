@@ -23,7 +23,6 @@ We designed 7 ways to generate news.
 - [Integration-based Fake](#integration-based-fake)
 - [Story-based Fake](#story-based-fake)
 - [Style-based Legitimate](#style-based-legitimate)
-- [Content-based Legitimate](#content-based-legitimate)
 - [Integration-based Legitimate](#integration-based-legitimate)
 
 Except for task "Content-based Fake", which uses [GLM4](https://www.chatglm.cn/) for generation, all other tasks use [ChatGLM3](https://github.com/THUDM/ChatGLM3).
@@ -37,7 +36,6 @@ The statistics for each task:
 | Integration-based Fake       |  2697  |
 | Story-based Fake             | 15729  |
 | Style-based Legitimate       | 11945  |
-| Content-based Legitimate     |   -    |
 | Integration-based Legitimate |  5926  | 
 
 ## Style-based Fake
@@ -196,12 +194,6 @@ Example:
         "generated_text_t015": "Lea Salonga, a native of the Philippines, has achieved her dream of becoming a Disney Princess. After earning a Tony Award for her portrayal of Kim in the Broadway musical \"Miss Saigon\" in 1991, Salonga landed the role of Princess Jasmine in the 1992 hit Disney film \"Aladdin.\" She later reprised her role as Mulan in the 1998 Disney film of the same name.\n\nIn a recent phone interview, Salonga reflected on the magical experience of becoming a Disney Princess. \"I never thought when I was 5 and listening to 'Cinderella' stories that I'd be a Disney princess,\" she said. \"I think it's such a magical thing to happen in my life, and for it to happen twice is something I would never have thought could happen.\"\n\nSalonga will perform a selection of well-known songs, including her greatest hits from various musicals and films, at concerts tonight at the Valley Performing Arts Center in Northridge and Saturday at Segerstrom Center for the Arts. She will be backed by a four-piece band.\n\n\"We made sure to choose a fun program that the band is going to dig playing and I'm going to love singing,\" Salonga said. \"And because we are having so much fun onstage, I hope that translates to the audience as well.\"\n\nSalonga's solo concerts often feature an audience participation segment, in which she chooses someone to join her onstage to sing the Grammy and Academy Award-winning duet \"A Whole New World\" from \"Aladdin.\" She promised that the audience will be familiar with the tunes and that they will fit her vocal range.\n\nSalonga has numerous Broadway credits, including her role as Eponine in the 1993 \"Les Misérables\" Broadway run and as Fantine in the 2006 Broadway revival. She recently came off Broadway in the new musical \"Allegiance,\" which also starred George Takei and Telly Leung.\n\nSplitting her time between the U.S. and Manila, Salonga is a coach on the Philippine version of the television show \"The Voice.\" In addition to her onscreen and onstage career, she has released several solo albums, including \"I'd Like to Teach the World to Sing\" (1997) and \"By Heart\" (1999).\n\nOn this tour, Grammy-nominated bass player Trey Henry and drummer Ray Brinker, both from the jazz group Tierney Sutton Band, will back Salonga. \"I get to go up onstage with musicians who I really admire and respect, and just have a great time with,\" Salonga said. \"It's thrilling when I get to perform stuff where I can just emotionally let go and fly off to another world in my mind, and the audience gets to ride on that too.\"\n\nContact the writer: [jmoe@ocregister.com](mailto:jmoe@ocregister.com)"
     }
 ```
-
-## Content-based Legitimate
-
-N/A
-
-
 
 ## Integration-based Legitimate
 
