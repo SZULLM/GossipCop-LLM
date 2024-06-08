@@ -2,7 +2,19 @@
 
 Download dataset from this link: [Google Drive](https://drive.google.com/drive/folders/1QfKCGYVZHwNQrsk3PihzZs_6bTacQ93M?usp=sharing)
 
-# Introduction
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Style-based Fake](#style-based-fake)
+- [Content-based Fake](#content-based-fake)
+- [Integration-based Fake](#integration-based-fake)
+- [Story-based Fake](#story-based-fake)
+- [Style-based Legitimate](#style-based-legitimate)
+- [Integration-based Legitimate](#integration-based-legitimate)
+- [Story-based Legitimate](#story-based-legitimate)
+- [Rationales](#rationales)
+
+## Introduction
 
 Our dataset is based on GossipCop, which is proposed by FakeNewsNet([ArXiv](https://arxiv.org/abs/1809.01286))([Github](https://github.com/KaiDMML/FakeNewsNet))
 
@@ -16,7 +28,7 @@ We did some preprocessing:
 
 We use v3 to do further processing.
 
-We designed 7 ways to generate news.
+We designed 6 ways to generate news.
 
 - [Style-based Fake](#style-based-fake)
 - [Content-based Fake](#content-based-fake)
@@ -37,6 +49,8 @@ The statistics for each task:
 | Story-based Fake             | 15729  |
 | Style-based Legitimate       | 11945  |
 | Integration-based Legitimate |  5926  | 
+
+Besides, we designed 10 questions from 7 categories to get rationales as extra information.
 
 ## Style-based Fake
 
@@ -243,7 +257,7 @@ Example:
 }
 ```
 
-# Rationales
+## Rationales
 
 We design 10 questions from 7 categories:
 
