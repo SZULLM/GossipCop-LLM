@@ -11,7 +11,6 @@ Download dataset from this link: [Google Drive](https://drive.google.com/drive/f
 - [Story-based Fake](#story-based-fake)
 - [Style-based Legitimate](#style-based-legitimate)
 - [Integration-based Legitimate](#integration-based-legitimate)
-- [Story-based Legitimate](#story-based-legitimate)
 - [Rationales](#rationales)
 
 ## Introduction
