@@ -258,6 +258,8 @@ Example:
 
 ## Rationales
 
+Above 6 tasks can be considered as 2 classes, "robot-fake" and "robot-legitimate", while the original news data can be classified into "human-fake" and "human-legitimate".
+
 We design 10 questions from 7 categories:
 
 1. Communication context and motive 
@@ -278,7 +280,7 @@ We design 10 questions from 7 categories:
 7. Pragmatics 
    - [Q10]:Is the text devoid of colloquialisms, slang, or regional phrases that would indicate a human author?
 
-We used ChatGLM3 to ask these 10 questions on all the above data and get the corresponding rationales. (R1-R10 correspond to Q1-Q10, respectively)
+We used ChatGLM3 to ask these 10 questions on all data and get the corresponding rationales. (R1-R10 correspond to Q1-Q10, respectively). These rationales can be used as extra information to support the 4 classes (human/robot-fake/legitimate). Here is an example:
 
 ```json
 {
