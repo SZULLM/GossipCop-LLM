@@ -13,6 +13,7 @@ Download dataset from this link: [Google Drive](https://drive.google.com/drive/f
 - [Integration-based Legitimate](#integration-based-legitimate)
 - [Rationales](#rationales)
 - [License](#license)
+- [Metadata](#metadata)
 
 ## Introduction
 
@@ -305,3 +306,7 @@ We used ChatGLM3 to ask these 10 questions on all data and get the corresponding
 ## Licence 
 
 The dataset is released under the Creative Commons Attribution 4.0 International License. 
+
+## Metadata
+
+Structured metadata for this dataset is available in the [croissant.json](./croissant.json) file.
