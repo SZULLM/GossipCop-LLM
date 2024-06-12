@@ -1,6 +1,6 @@
 # GossipCop-LLM
 
-Download dataset from this link: [Google Drive](https://drive.google.com/drive/folders/1QfKCGYVZHwNQrsk3PihzZs_6bTacQ93M?usp=sharing)
+Download dataset from this link: [Google Drive](https://drive.google.com/drive/folders/1rLrh5x5UlYskfbhhVyz523MKgmCDyuX2?usp=sharing)
 
 ## Table of Contents
 
