@@ -1,6 +1,6 @@
 # MegaFake
 
-Download dataset from this link: [Google Drive](https://drive.google.com/drive/folders/1rLrh5x5UlYskfbhhVyz523MKgmCDyuX2?usp=sharing)
+Download dataset from this link: [Google Drive](https://drive.google.com/drive/folders/1GGdqL5qTOvm3HELSp5eIe8NhoKcu5HP2?usp=sharing)
 
 ## Table of Contents
 
